@@ -11,6 +11,7 @@ namespace AppAnimateTest.ViewModels
     public class TodoData
     {
         public string From { get; set; }
+        public string Portrait { get; set; }
         public string Title { get; set; }
         public string FlowName { get; set; }
         public string DateTime { get; set; }
@@ -85,6 +86,14 @@ namespace AppAnimateTest.ViewModels
                 item.Title = "Test title " + i.ToString();
                 item.FlowName = "TestFlow";
                 item.CurrentNode = "TestNode";
+                if (i % 2 == 0)
+                    item.Portrait = "https://images.pexels.com/photos/10554368/pexels-photo-10554368.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260";
+                else if (i % 3 == 0)
+                    item.Portrait = "https://images.pexels.com/photos/6204570/pexels-photo-6204570.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260";
+                else if (i % 4 == 0)
+                    item.Portrait = "https://images.pexels.com/photos/7201114/pexels-photo-7201114.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260";
+                else
+                    item.Portrait = "portrait.png";
                 TodoList.Add(item);
             }
             IsBusy = false;

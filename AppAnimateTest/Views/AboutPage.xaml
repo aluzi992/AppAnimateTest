@@ -40,7 +40,7 @@
                                     <RowDefinition Height="*"/>
                                     <RowDefinition Height="1"/>
                                 </Grid.RowDefinitions>
-                                <Image VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="70" HeightRequest="70" Source="portrait.png" Grid.RowSpan="1">
+                                <Image VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="70" HeightRequest="70" Source="{Binding Portrait}" Grid.RowSpan="1">
                                     <Image.Clip>
                                         <EllipseGeometry Center="35,35" RadiusX="35" RadiusY="35"/>
                                     </Image.Clip>
